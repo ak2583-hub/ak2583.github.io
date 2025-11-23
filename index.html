@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Calculator</title>
+  <style>
+    body {
+      background-color: yellow;
+      font-family: Calibri;
+      text-align: center;
+    }
+
+    h1 {
+      color: #000080;
+    }
+
+  </style>
+</head>
+<body>
+
+    <center>
+        <h1>
+            <font color="#000080">My Calculator</font>
+        </h1>
+    </center>
+
+    <hr>
+
+    <form name="form1">
+        <h4>First Number</h4>
+        <input type="text" name="num1"><br><br>
+
+        <h4>Second Number</h4>
+        <input type="text" name="num2"><br><br>
+
+        <font size="5">
+            <input type="button" value="+" onclick="add()">
+            <input type="button" value="-" onclick="subtract()">
+            <input type="button" value="x" onclick="multiply()">
+            <input type="button" value="÷" onclick="divide()">
+        </font>
+
+        <br><br>
+        <hr>
+        <h4>
+            <font color="#000080">Result:</font><br>
+        </h4>
+        <input type="text" name="result">
+    </form>
+
+    <script>
+        function add() {
+            var x, y;
+
+            var x = Number(document.form1.num1.value);
+            var y = Number(document.form1.num2.value);
+            document.form1.result.value = x + y;
+        }
+
+        function subtract() {
+            var x, y;
+            var x = Number(document.form1.num1.value);
+            var y = Number(document.form1.num2.value);
+            document.form1.result.value = x - y;
+        }
+
+        function multiply() {
+            var x, y;
+            var x = Number(document.form1.num1.value);
+            var y = Number(document.form1.num2.value);
+            document.form1.result.value = x * y;
+        }
+
+        function divide() {
+            var x, y;
+            var x = Number(document.form1.num1.value);
+            var y = Number(document.form1.num2.value);
+            document.form1.result.value = x / y;
+        }
+    </script>
+
+</body>
+
+</html>
